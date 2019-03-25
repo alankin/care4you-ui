@@ -1,22 +1,32 @@
 <safety-equipment-carousel></safety-equipment-carousel>
 <h2> Add Safety Equipment</h2>
-<form style="width: 80%; padding: 25px;">
+<form style="width: 80%; padding: 25px;" [formGroup]="saFormGroup" (ngSubmit)="onSubmit()">
   <fieldset>
     <legend>Legend</legend>
 
-    <div class="form-group">
+    <section class="form-group">
       <label for="codeInput">Code Equipment</label>
-      <input type="email" class="form-control" id="codeInput" aria-describedby="CodeSafetyEquipment" placeholder="Code safety equipment">
+      <input type="text"
+             class="form-control"
+             formControlName="code"
+             id="codeInput"
+             aria-describedby="CodeSafetyEquipment"
+             placeholder="Code safety equipment">
       <small id="codeSafety" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
+    </section>
 
-    <div class="form-group">
+    <section class="form-group">
       <label for="nameImput">Name Equipment</label>
-      <input type="email" class="form-control" id="nameImput" aria-describedby="NameSafetyEquipment" placeholder="Code safety equipment">
+      <input type="text"
+             class="form-control"
+             formControlName="name"
+             id="nameImput"
+             aria-describedby="NameSafetyEquipment"
+             placeholder="Code safety equipment">
       <small id="nameSafety" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
+    </section>
 
-    <div class="form-group">
+    <section class="form-group">
       <label for="exampleSelect1">Type Safety Equipment</label>
       <select class="form-control" id="exampleSelect1">
         <option>FIRST AID</option>
@@ -24,18 +34,18 @@
         <option>TRAUMATOLOGY</option>
         <option>INJURIES AND FRACTURES</option>
       </select>
-    </div>
+    </section>
 
-    <div class="form-group">
+    <section class="form-group">
       <label for="exampleTextarea">Description Equipment</label>
       <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-    </div>
+    </section>
 
-    <div class="form-group">
+    <section class="form-group">
       <label for="exampleInputFile">File Equipment</label>
       <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
       <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-    </div>
+    </section>
 
     <fieldset class="form-group">
       <legend>Radio buttons</legend>

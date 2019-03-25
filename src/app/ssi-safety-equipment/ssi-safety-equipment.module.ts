@@ -17,6 +17,7 @@ import {SafetyEquipmentHomeComponent} from './components/safety-equipment-home/s
 import {SafetyEquipmentCreateComponent} from './components/safety-equipment-create/safety-equipment-create.component';
 import {SafetyEquipmentItemComponent} from './components/safety-equipment-item/safety-equipment-item.component';
 import {SafetyEquipmentListComponent} from './components/safety-equipment-list/safety-equipment-list.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import {SafetyEquipmentListComponent} from './components/safety-equipment-list/s
     CommonModule,
     SafetyEquipmentRoutesModule,
     HttpClientModule,
-    NgbCarouselModule
+    FormsModule,
+    NgbCarouselModule,
+    ReactiveFormsModule
   ],
   exports: [
     SsiSafetyEquipmentComponent,

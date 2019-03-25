@@ -3,12 +3,12 @@
  */
 import {Injectable} from '@angular/core';
 import {BaseHttpService} from '../../boostrap/base-http-service';
-import {Incident, IncidentDTO} from '../api/domain/Incident';
+import {Employee, EmployeeDTO} from '../api/domain/Employee';
 
 @Injectable()
-export class IncidentsHttpService extends BaseHttpService<Incident, IncidentDTO> {
+export class EmployeesHttpService extends BaseHttpService<Employee, EmployeeDTO> {
 
   protected path(): string {
-    return '/incidents';
+    return '/employees';
   }
 }

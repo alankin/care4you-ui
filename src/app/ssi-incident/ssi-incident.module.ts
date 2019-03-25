@@ -5,35 +5,45 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {IncidentRoutesModule} from './routes/incident-routes.module';
 
 import {IncidentsHttpService} from './services/incidents-http-service';
 
 import {SsiIncidentComponent} from './ssi-incident.component';
-import {IncidentMainComponent} from './components/incident-main/incident-main.component';
 import {IncidentRootComponent} from './components/incident-root/incident-root.component';
+import {IncidentListComponent} from './components/incident-list/incident-list.component';
+import {IncidentCreateComponent} from './components/incident-create/incident-create.component';
+import {NgbDatepickerModule} from '@ng-bootstrap/ng-bootstrap';
+import {EmployeesHttpService} from './services/employees-http-service';
 
 
 @NgModule({
   declarations: [
     SsiIncidentComponent,
     IncidentRootComponent,
-    IncidentMainComponent
+    IncidentListComponent,
+    IncidentCreateComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     IncidentRoutesModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbDatepickerModule
   ],
   exports: [
     SsiIncidentComponent,
     IncidentRootComponent,
-    IncidentMainComponent
+    IncidentListComponent,
+    IncidentCreateComponent
   ],
   providers: [
-    IncidentsHttpService
+    IncidentsHttpService,
+    EmployeesHttpService
   ]
 })
 export class SsiIncidentModule {
