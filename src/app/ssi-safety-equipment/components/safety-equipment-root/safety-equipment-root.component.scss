@@ -1,0 +1,8 @@
+@import "../../../../assets/grid/ssi-ui-variables";
+
+.safety-equipment-root {
+  display: flex;
+  flex-flow: row nowrap;
+  height: calc(100vh - #{$navHeightWithPadding});
+  width: 100%;
+}

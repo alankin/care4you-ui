@@ -1,0 +1,46 @@
+@import "./../../../../assets/grid/ssi-ui-variables";
+@import "./../../../../assets/grid/ssi-flexbox";
+
+.se-home-container {
+  display: flex;
+  width: 100%;
+  padding: 40px 20px;
+
+  @include ssi-main-center();
+}
+
+.se-home-a {
+  color: #f8f9fa !important;
+}
+
+.se-home-content {
+  display: flex;
+  width: 70%;
+  padding: 20px 10px;
+
+  @include ssi-main-center();
+
+}
+
+.se-home-content-img {
+  width: 40%;
+
+}
+
+.se-home-content-img-size {
+  width: 306px;
+  height: 236px;
+}
+
+.se-home-content-text {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+.se-home-content-title{
+  font-size: 20px;
+  width: 100%;
+  @include ssi-main-center();
+}

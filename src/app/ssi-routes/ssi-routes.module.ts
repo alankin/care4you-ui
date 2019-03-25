@@ -8,6 +8,7 @@ import {ROUTES_CONFIG} from './ssi-routes';
 import {SsiHomeModule} from '../ssi-home/ssi-home.module';
 import {SsiOrganizationModule} from '../ssi-organization/ssi-organization.module';
 import {SsiIncidentModule} from '../ssi-incident/ssi-incident.module';
+import {SsiSafetyEquipmentModule} from '../ssi-safety-equipment/ssi-safety-equipment.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {SsiIncidentModule} from '../ssi-incident/ssi-incident.module';
     RouterModule.forRoot(ROUTES_CONFIG),
     SsiHomeModule,
     SsiOrganizationModule,
-    SsiIncidentModule
+    SsiIncidentModule,
+    SsiSafetyEquipmentModule
   ],
   exports: [RouterModule]
 })

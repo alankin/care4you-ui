@@ -1,0 +1,63 @@
+<safety-equipment-carousel></safety-equipment-carousel>
+<h2> Add Safety Equipment</h2>
+<form style="width: 80%; padding: 25px;">
+  <fieldset>
+    <legend>Legend</legend>
+
+    <div class="form-group">
+      <label for="codeInput">Code Equipment</label>
+      <input type="email" class="form-control" id="codeInput" aria-describedby="CodeSafetyEquipment" placeholder="Code safety equipment">
+      <small id="codeSafety" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="nameImput">Name Equipment</label>
+      <input type="email" class="form-control" id="nameImput" aria-describedby="NameSafetyEquipment" placeholder="Code safety equipment">
+      <small id="nameSafety" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleSelect1">Type Safety Equipment</label>
+      <select class="form-control" id="exampleSelect1">
+        <option>FIRST AID</option>
+        <option>AGAINST FIRE</option>
+        <option>TRAUMATOLOGY</option>
+        <option>INJURIES AND FRACTURES</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleTextarea">Description Equipment</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputFile">File Equipment</label>
+      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+      <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+    </div>
+
+    <fieldset class="form-group">
+      <legend>Radio buttons</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+          Establish a minimum stock
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+          Set a notification alert for minimum values
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" checked="">
+          Not notify anything
+        </label>
+      </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>

@@ -1,0 +1,7 @@
+@import "./../../../../assets/grid/ssi-ui-variables";
+@import "./../../../../assets/grid/ssi-flexbox";
+
+.carousel-img {
+  width: calc(100vw - 2px);
+  height: calc(100vh - #{$navHeight});
+}
