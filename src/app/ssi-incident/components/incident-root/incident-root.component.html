@@ -6,15 +6,18 @@
       </span>
       <a routerLink="/incident/list"
          routerLinkActive="incident-root-menu-item-active"
-         class="list-group-item list-group-item-action incident-root-menu-item">Incidents</a>
+         class="list-group-item list-group-item-action incident-root-menu-item"
+         id="list-incidents-menu">Incidents</a>
       <a routerLink="/incident/create"
          routerLinkActive="incident-root-menu-item-active"
-         class="list-group-item list-group-item-action incident-root-menu-item">Create an
+         class="list-group-item list-group-item-action incident-root-menu-item"
+         id="create-incident-menu">Create an
         incident</a>
       <button
         class="list-group-item list-group-item-action incident-root-menu-item"
         [disabled]="disabledReports"
-        (click)="onReportAction($event)">Generate Report
+        (click)="onReportAction($event)"
+        id="report-incident-menu">Generate Report
       </button>
     </div>
   </section>
