@@ -15,7 +15,7 @@
     <tr *ngFor="let incident of incidents; index as i">
       <th scope="row">{{ i + 1 }}</th>
       <td>{{ incident.employee.firstName + ' ' + incident.employee.lastName }}</td>
-      <td>{{ incident.name }}</td>
+      <td class="incident-list-name">{{ incident.name }}</td>
       <td>{{ incident.type }}</td>
       <td>{{ incident.severity }}</td>
       <td>
